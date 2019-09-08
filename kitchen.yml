@@ -46,6 +46,10 @@ platforms:
         - sh bootstrap-salt.sh -XdPbfrq -x python3 git develop
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    # Workaround to avoid intermittent failures on `opensuse-leap-15`:
+    # => SCP did not finish successfully (255):  (Net::SCP::Error)
+    transport:
+      max_ssh_sessions: 1
   - name: amazonlinux-2-develop-py2
     driver:
       image: netmanagers/salt-develop-py2:amazonlinux-2
@@ -72,6 +76,10 @@ platforms:
       provision_command:
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    # Workaround to avoid intermittent failures on `opensuse-leap-15`:
+    # => SCP did not finish successfully (255):  (Net::SCP::Error)
+    transport:
+      max_ssh_sessions: 1
   - name: amazonlinux-2-2019-2-py2
     driver:
       image: netmanagers/salt-2019.2-py2:amazonlinux-2
@@ -95,6 +103,10 @@ platforms:
       provision_command:
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    # Workaround to avoid intermittent failures on `opensuse-leap-15`:
+    # => SCP did not finish successfully (255):  (Net::SCP::Error)
+    transport:
+      max_ssh_sessions: 1
   - name: amazonlinux-2-2018-3-py2
     driver:
       image: netmanagers/salt-2018.3-py2:amazonlinux-2
@@ -119,6 +131,10 @@ platforms:
       provision_command:
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    # Workaround to avoid intermittent failures on `opensuse-leap-15`:
+    # => SCP did not finish successfully (255):  (Net::SCP::Error)
+    transport:
+      max_ssh_sessions: 1
   - name: amazonlinux-2-2017-7-py2
     driver:
       image: netmanagers/salt-2017.7-py2:amazonlinux-2
