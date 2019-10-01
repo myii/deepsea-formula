@@ -40,12 +40,14 @@ platforms:
         - yum install make -y
   - name: opensuse-leap-15-develop-py3
     driver:
-      image: netmanagers/salt-develop-py3:opensuse-leap-15
+      image: opensuse/leap:15
       provision_command:
-        - curl -o bootstrap-salt.sh -L https://bootstrap.saltstack.com
-        - sh bootstrap-salt.sh -XdPbfrq -x python3 git develop
+        - systemctl enable sshd.service
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    provisioner:
+      salt_bootstrap_options: -XdPfrq -x python3 git develop
+      salt_install: bootstrap
     # Workaround to avoid intermittent failures on `opensuse-leap-15`:
     # => SCP did not finish successfully (255):  (Net::SCP::Error)
     transport:
@@ -79,10 +81,14 @@ platforms:
       image: netmanagers/salt-2019.2-py3:fedora-30
   - name: opensuse-leap-15-2019-2-py3
     driver:
-      image: netmanagers/salt-2019.2-py3:opensuse-leap-15
+      image: opensuse/leap:15
       provision_command:
+        - systemctl enable sshd.service
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    provisioner:
+      salt_bootstrap_options: -XdPfrq -x python3 git 2019.2
+      salt_install: bootstrap
     # Workaround to avoid intermittent failures on `opensuse-leap-15`:
     # => SCP did not finish successfully (255):  (Net::SCP::Error)
     transport:
@@ -110,10 +116,14 @@ platforms:
       image: netmanagers/salt-2018.3-py2:fedora-29
   - name: opensuse-leap-15-2018-3-py2
     driver:
-      image: netmanagers/salt-2018.3-py2:opensuse-leap-15
+      image: opensuse/leap:15
       provision_command:
+        - systemctl enable sshd.service
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    provisioner:
+      salt_bootstrap_options: -XdPfrq -x python2 git 2018.3
+      salt_install: bootstrap
     # Workaround to avoid intermittent failures on `opensuse-leap-15`:
     # => SCP did not finish successfully (255):  (Net::SCP::Error)
     transport:
@@ -142,10 +152,14 @@ platforms:
       image: netmanagers/salt-2017.7-py2:fedora-29
   - name: opensuse-leap-15-2017-7-py2
     driver:
-      image: netmanagers/salt-2017.7-py2:opensuse-leap-15
+      image: opensuse/leap:15
       provision_command:
+        - systemctl enable sshd.service
         - zypper -n in tar gzip
       run_command: /usr/lib/systemd/systemd
+    provisioner:
+      salt_bootstrap_options: -XdPfrq -x python2 git 2017.7
+      salt_install: bootstrap
     # Workaround to avoid intermittent failures on `opensuse-leap-15`:
     # => SCP did not finish successfully (255):  (Net::SCP::Error)
     transport:
