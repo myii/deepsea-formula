@@ -4,7 +4,7 @@
 {#- Get the `tplroot` from `tpldir` #}
 {%- set tplroot = tpldir.split('/')[0] %}
 {%- from tplroot ~ "/map.jinja" import deepsea with context %}
- 
+
     {%- if deepsea.pkg.use_upstream_repo %}
 include:
   - .repo
