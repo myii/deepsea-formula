@@ -2,6 +2,28 @@
 Changelog
 =========
 
+`0.3.1 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.0...v0.3.1>`_ (2019-10-10)
+---------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **install.sls:** fix ``salt-lint`` errors (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/fcde943>`_\ )
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **kitchen:** change ``log_level`` to ``debug`` instead of ``info`` (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/7b93005>`_\ )
+* **kitchen:** install required packages to bootstrapped ``opensuse`` [skip ci] (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/1a5ec63>`_\ )
+* **kitchen:** use bootstrapped ``opensuse`` images until ``2019.2.2`` [skip ci] (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/86c5abd>`_\ )
+* **kitchen+travis:** replace EOL pre-salted images (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/0c670d4>`_\ )
+* **platform:** add ``arch-base-latest`` (commented out for now) [skip ci] (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/624ec28>`_\ )
+* **yamllint:** add rule ``empty-values`` & use new ``yaml-files`` setting (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/9280fc7>`_\ )
+* merge travis matrix, add ``salt-lint`` & ``rubocop`` to ``lint`` job (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/c12fc90>`_\ )
+* use ``dist: bionic`` & apply ``opensuse-leap-15`` SCP error workaround (\ ` <https://github.com/saltstack-formulas/deepsea-formula/commit/cf55fbf>`_\ )
+
 `0.3.0 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.2.1...v0.3.0>`_ (2019-08-17)
 ---------------------------------------------------------------------------------------------------------
 
