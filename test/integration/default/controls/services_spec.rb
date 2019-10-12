@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 control 'salt-minion service' do
   impact 0.5
   title 'should be running and enabled'
@@ -6,5 +8,4 @@ control 'salt-minion service' do
     it { should be_enabled }
     it { should be_running }
   end
-
 end
