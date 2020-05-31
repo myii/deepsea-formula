@@ -42,6 +42,8 @@ Suse:
       - gptfdisk
       - iperf
       - lsof
+      - tar
+      - gzip
     repo:
       name: 'Filesystem tools and FUSE-related packages (openSUSE_Leap_$releasever)'
       humanname: 'Filesystem tools and FUSE-related packages'
