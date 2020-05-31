@@ -2,6 +2,52 @@
 Changelog
 =========
 
+`0.3.3 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.2...v0.3.3>`_ (2020-05-31)
+---------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **libtofs:** “files_switch” mess up the variable exported by “map.jinja” [skip ci] (\ `33c8a2d <https://github.com/saltstack-formulas/deepsea-formula/commit/33c8a2d725d18bf49f11c52e8cb32848d6c8e53b>`_\ )
+* **osfamilymap:** make ``tar`` & ``gzip`` available for ``opensuse`` (\ `c079b59 <https://github.com/saltstack-formulas/deepsea-formula/commit/c079b59a4090543c0033fa5ba845a6cee4600ddb>`_\ )
+* **release.config.js:** use full commit hash in commit link [skip ci] (\ `5106a31 <https://github.com/saltstack-formulas/deepsea-formula/commit/5106a317649331c4a1a271e1ad84ca07d7a379de>`_\ )
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **gemfile:** restrict ``train`` gem version until upstream fix [skip ci] (\ `2468a0d <https://github.com/saltstack-formulas/deepsea-formula/commit/2468a0df2fe0e35cd67ab0c0d64d9361d5ebb3d3>`_\ )
+* **gemfile.lock:** add to repo with updated ``Gemfile`` [skip ci] (\ `932e3c3 <https://github.com/saltstack-formulas/deepsea-formula/commit/932e3c384fd9d964f105b3914c03cf799d4a5c44>`_\ )
+* **kitchen:** avoid using bootstrap for ``master`` instances [skip ci] (\ `e68effa <https://github.com/saltstack-formulas/deepsea-formula/commit/e68effa8811ba11a80ab84d817dd2c7d2511c3de>`_\ )
+* **kitchen:** use ``debian-10-master-py3`` instead of ``develop`` [skip ci] (\ `52a206f <https://github.com/saltstack-formulas/deepsea-formula/commit/52a206f685975b4891cec3be5bd4f92238fba0bf>`_\ )
+* **kitchen:** use ``develop`` image until ``master`` is ready (\ ``amazonlinux``\ ) [skip ci] (\ `a49adf8 <https://github.com/saltstack-formulas/deepsea-formula/commit/a49adf8650fefa812635d7ba5871c02f02a7f1b6>`_\ )
+* **kitchen+travis:** remove ``master-py2-arch-base-latest`` [skip ci] (\ `4ffcbd8 <https://github.com/saltstack-formulas/deepsea-formula/commit/4ffcbd8a9ac137a9e48cea9c52927171648e6291>`_\ )
+* **kitchen+travis:** upgrade matrix after ``2019.2.2`` release [skip ci] (\ `aa993c0 <https://github.com/saltstack-formulas/deepsea-formula/commit/aa993c0e0aa71d5d9dbd60457ee8d257c903fb46>`_\ )
+* **kitchen+travis:** use latest pre-salted images (\ `44586ef <https://github.com/saltstack-formulas/deepsea-formula/commit/44586ef65040386e034482c4b6f6f373ba3b38e3>`_\ )
+* **travis:** add notifications => zulip [skip ci] (\ `1ddd368 <https://github.com/saltstack-formulas/deepsea-formula/commit/1ddd36806e176a9c6d8a0ed891c8f72aa08f0f43>`_\ )
+* **travis:** apply changes from build config validation [skip ci] (\ `4a1ca2f <https://github.com/saltstack-formulas/deepsea-formula/commit/4a1ca2f07c5859061c1939f4c7b71182f3ea3bf7>`_\ )
+* **travis:** opt-in to ``dpl v2`` to complete build config validation [skip ci] (\ `441827d <https://github.com/saltstack-formulas/deepsea-formula/commit/441827d7c90bb0324e9d73ea1295ddafd6ae0120>`_\ )
+* **travis:** quote pathspecs used with ``git ls-files`` [skip ci] (\ `dfc3c07 <https://github.com/saltstack-formulas/deepsea-formula/commit/dfc3c07b295b17594bbe99ef6ed9eba6d7babdc6>`_\ )
+* **travis:** run ``shellcheck`` during lint job [skip ci] (\ `826ed89 <https://github.com/saltstack-formulas/deepsea-formula/commit/826ed898b05fe80a284180d20422627f87f72a9f>`_\ )
+* **travis:** update ``salt-lint`` config for ``v0.0.10`` [skip ci] (\ `ec2dc52 <https://github.com/saltstack-formulas/deepsea-formula/commit/ec2dc5279dfa08ccd42a787f2182d4d7697a1485>`_\ )
+* **travis:** use ``major.minor`` for ``semantic-release`` version [skip ci] (\ `1027977 <https://github.com/saltstack-formulas/deepsea-formula/commit/1027977df8f9c2bfe2fb8c14c616efc00d26ed1f>`_\ )
+* **travis:** use build config validation (beta) [skip ci] (\ `e247e74 <https://github.com/saltstack-formulas/deepsea-formula/commit/e247e745ef676c067bbf75d9b9a8c716788d0144>`_\ )
+* **workflows/commitlint:** add to repo [skip ci] (\ `145874f <https://github.com/saltstack-formulas/deepsea-formula/commit/145874faf12874e456f5786a30bfb56bdb377e99>`_\ )
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **contributing:** remove to use org-level file instead [skip ci] (\ `769137f <https://github.com/saltstack-formulas/deepsea-formula/commit/769137fcf193237f3e4f5ca7381bb6d80c8566ed>`_\ )
+* **readme:** update link to ``CONTRIBUTING`` [skip ci] (\ `58ff2b3 <https://github.com/saltstack-formulas/deepsea-formula/commit/58ff2b30943e040068060a9bb24e12fa7da40361>`_\ )
+
+Performance Improvements
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **travis:** improve ``salt-lint`` invocation [skip ci] (\ `3efbfc5 <https://github.com/saltstack-formulas/deepsea-formula/commit/3efbfc5149659a39458f296a61d4c4d982d952c1>`_\ )
+
 `0.3.2 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.1...v0.3.2>`_ (2019-10-12)
 ---------------------------------------------------------------------------------------------------------
 
