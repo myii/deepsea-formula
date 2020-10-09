@@ -125,7 +125,7 @@ See official documentation at https://github.com/SUSE/DeepSea/blob/master/README
 
 For example on Ubuntu 18.04-
 
-.. code-block:: bash
+.. code-block:: console
 
         root@ubuntu1804:~# salt-run state.orch ceph.stage.0
         
