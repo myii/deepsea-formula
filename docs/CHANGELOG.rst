@@ -2,6 +2,31 @@
 Changelog
 =========
 
+`0.3.4 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.3...v0.3.4>`_ (2020-12-16)
+---------------------------------------------------------------------------------------------------------
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **gitlab-ci:** use GitLab CI as Travis CI replacement (\ `ed46df8 <https://github.com/saltstack-formulas/deepsea-formula/commit/ed46df8a15cf166ef3b5a03e330de2cf9483e1bf>`_\ )
+* **kitchen:** use ``saltimages`` Docker Hub where available [skip ci] (\ `9bcfd72 <https://github.com/saltstack-formulas/deepsea-formula/commit/9bcfd72a227bd929088bd4dce6e6a28c462c7412>`_\ )
+* **pre-commit:** add to formula [skip ci] (\ `3b8ed04 <https://github.com/saltstack-formulas/deepsea-formula/commit/3b8ed046217057e1b25f74f39fbec1d72cabbb03>`_\ )
+* **pre-commit:** enable/disable ``rstcheck`` as relevant [skip ci] (\ `e81f811 <https://github.com/saltstack-formulas/deepsea-formula/commit/e81f8112025e8212c77f40fbee3a75e49bbb5c75>`_\ )
+* **pre-commit:** finalise ``rstcheck`` configuration [skip ci] (\ `6b59de0 <https://github.com/saltstack-formulas/deepsea-formula/commit/6b59de00af97a6229fa900fbdfd85d64b1a996bb>`_\ )
+
+Documentation
+^^^^^^^^^^^^^
+
+
+* **readme:** fix ``rstcheck`` violation [skip ci] (\ `f724dd2 <https://github.com/saltstack-formulas/deepsea-formula/commit/f724dd225ead709c8a04a31b1427de1337ac65bf>`_\ ), closes `/travis-ci.org/github/myii/deepsea-formula/builds/731606296#L252-L253 <https://github.com//travis-ci.org/github/myii/deepsea-formula/builds/731606296/issues/L252-L253>`_
+
+Styles
+^^^^^^
+
+
+* **libtofs.jinja:** use Black-inspired Jinja formatting [skip ci] (\ `ea917df <https://github.com/saltstack-formulas/deepsea-formula/commit/ea917df8adc06e90299bb17bd4470e57dcb4d5fb>`_\ )
+
 `0.3.3 <https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.2...v0.3.3>`_ (2020-05-31)
 ---------------------------------------------------------------------------------------------------------
 
