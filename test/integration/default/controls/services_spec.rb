@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 control 'salt-minion service' do
-  impact 0.5
   title 'should be running and enabled'
+
+  only_if('Disabled on CentOS and Fedora') do
+    !%w[centos fedora].include?(platform[:name])
+  end
 
   describe service('salt-minion') do
     it { should be_enabled }
