@@ -312,6 +312,7 @@ suites:
       state_top:
         base:
           '*':
+            - deepsea._mapdata
             - deepsea
       pillars:
         top.sls:
