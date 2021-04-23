@@ -17,7 +17,7 @@ deepsea-package-source-install-file-directory:
     - mode: 755
     - makedirs: True
     - require_in:
-      - source: deepsea-package-source-install-source-extracted
+      - archive: deepsea-package-source-install-source-extracted
     - recurse:
         - user
         - group
