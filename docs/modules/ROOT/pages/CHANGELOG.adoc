@@ -1,0 +1,212 @@
+= Changelog
+
+:sectnums!:
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.3...v0.3.4++[0.3.4^] (2020-12-16)
+
+=== Continuous Integration
+
+* *gitlab-ci:* use GitLab CI as Travis CI replacement
+(https://github.com/saltstack-formulas/deepsea-formula/commit/ed46df8a15cf166ef3b5a03e330de2cf9483e1bf[ed46df8^])
+* *kitchen:* use `saltimages` Docker Hub where available [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/9bcfd72a227bd929088bd4dce6e6a28c462c7412[9bcfd72^])
+* *pre-commit:* add to formula [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/3b8ed046217057e1b25f74f39fbec1d72cabbb03[3b8ed04^])
+* *pre-commit:* enable/disable `rstcheck` as relevant [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/e81f8112025e8212c77f40fbee3a75e49bbb5c75[e81f811^])
+* *pre-commit:* finalise `rstcheck` configuration [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/6b59de00af97a6229fa900fbdfd85d64b1a996bb[6b59de0^])
+
+=== Documentation
+
+* *readme:* fix `rstcheck` violation [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/f724dd225ead709c8a04a31b1427de1337ac65bf[f724dd2^]),
+closes
+https://github.com//travis-ci.org/github/myii/deepsea-formula/builds/731606296/issues/L252-L253[/travis-ci.org/github/myii/deepsea-formula/builds/731606296#L252-L253^]
+
+=== Styles
+
+* *libtofs.jinja:* use Black-inspired Jinja formatting [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/ea917df8adc06e90299bb17bd4470e57dcb4d5fb[ea917df^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.2...v0.3.3++[0.3.3^] (2020-05-31)
+
+=== Bug Fixes
+
+* *libtofs:* “files_switch” mess up the variable exported by “map.jinja”
+ [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/33c8a2d725d18bf49f11c52e8cb32848d6c8e53b[33c8a2d^])
+* *osfamilymap:* make `tar` & `gzip` available for `opensuse`
+(https://github.com/saltstack-formulas/deepsea-formula/commit/c079b59a4090543c0033fa5ba845a6cee4600ddb[c079b59^])
+* *release.config.js:* use full commit hash in commit link [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/5106a317649331c4a1a271e1ad84ca07d7a379de[5106a31^])
+
+=== Continuous Integration
+
+* *gemfile:* restrict `train` gem version until upstream fix [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/2468a0df2fe0e35cd67ab0c0d64d9361d5ebb3d3[2468a0d^])
+* *gemfile.lock:* add to repo with updated `Gemfile` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/932e3c384fd9d964f105b3914c03cf799d4a5c44[932e3c3^])
+* *kitchen:* avoid using bootstrap for `master` instances [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/e68effa8811ba11a80ab84d817dd2c7d2511c3de[e68effa^])
+* *kitchen:* use `debian-10-master-py3` instead of `develop` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/52a206f685975b4891cec3be5bd4f92238fba0bf[52a206f^])
+* *kitchen:* use `develop` image until `master` is ready (`amazonlinux`)
+ [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/a49adf8650fefa812635d7ba5871c02f02a7f1b6[a49adf8^])
+* *kitchen+travis:* remove `master-py2-arch-base-latest` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/4ffcbd8a9ac137a9e48cea9c52927171648e6291[4ffcbd8^])
+* *kitchen+travis:* upgrade matrix after `2019.2.2` release [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/aa993c0e0aa71d5d9dbd60457ee8d257c903fb46[aa993c0^])
+* *kitchen+travis:* use latest pre-salted images
+(https://github.com/saltstack-formulas/deepsea-formula/commit/44586ef65040386e034482c4b6f6f373ba3b38e3[44586ef^])
+* *travis:* add notifications => zulip [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/1ddd36806e176a9c6d8a0ed891c8f72aa08f0f43[1ddd368^])
+* *travis:* apply changes from build config validation [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/4a1ca2f07c5859061c1939f4c7b71182f3ea3bf7[4a1ca2f^])
+* *travis:* opt-in to `dpl v2` to complete build config validation [skip
+ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/441827d7c90bb0324e9d73ea1295ddafd6ae0120[441827d^])
+* *travis:* quote pathspecs used with `git ls-files` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/dfc3c07b295b17594bbe99ef6ed9eba6d7babdc6[dfc3c07^])
+* *travis:* run `shellcheck` during lint job [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/826ed898b05fe80a284180d20422627f87f72a9f[826ed89^])
+* *travis:* update `salt-lint` config for `v0.0.10` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/ec2dc5279dfa08ccd42a787f2182d4d7697a1485[ec2dc52^])
+* *travis:* use `major.minor` for `semantic-release` version [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/1027977df8f9c2bfe2fb8c14c616efc00d26ed1f[1027977^])
+* *travis:* use build config validation (beta) [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/e247e745ef676c067bbf75d9b9a8c716788d0144[e247e74^])
+* *workflows/commitlint:* add to repo [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/145874faf12874e456f5786a30bfb56bdb377e99[145874f^])
+
+=== Documentation
+
+* *contributing:* remove to use org-level file instead [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/769137fcf193237f3e4f5ca7381bb6d80c8566ed[769137f^])
+* *readme:* update link to `CONTRIBUTING` [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/58ff2b30943e040068060a9bb24e12fa7da40361[58ff2b3^])
+
+=== Performance Improvements
+
+* *travis:* improve `salt-lint` invocation [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/3efbfc5149659a39458f296a61d4c4d982d952c1[3efbfc5^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.1...v0.3.2++[0.3.2^] (2019-10-12)
+
+=== Bug Fixes
+
+* *rubocop:* add fixes using `rubocop --safe-auto-correct`
+(https://github.com/saltstack-formulas/deepsea-formula/commit/93d3df6[93d3df6^])
+
+=== Continuous Integration
+
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/deepsea-formula/commit/01c293f[01c293f^])
+* *travis:* merge `rubocop` linter into main `lint` job
+(https://github.com/saltstack-formulas/deepsea-formula/commit/0f5c040[0f5c040^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.3.0...v0.3.1++[0.3.1^] (2019-10-10)
+
+=== Bug Fixes
+
+* *install.sls:* fix `salt-lint` errors
+(https://github.com/saltstack-formulas/deepsea-formula/commit/fcde943[fcde943^])
+
+=== Continuous Integration
+
+* *kitchen:* change `log_level` to `debug` instead of `info`
+(https://github.com/saltstack-formulas/deepsea-formula/commit/7b93005[7b93005^])
+* *kitchen:* install required packages to bootstrapped `opensuse` [skip
+ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/1a5ec63[1a5ec63^])
+* *kitchen:* use bootstrapped `opensuse` images until `2019.2.2` [skip
+ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/86c5abd[86c5abd^])
+* *kitchen+travis:* replace EOL pre-salted images
+(https://github.com/saltstack-formulas/deepsea-formula/commit/0c670d4[0c670d4^])
+* *platform:* add `arch-base-latest` (commented out for now) [skip ci]
+(https://github.com/saltstack-formulas/deepsea-formula/commit/624ec28[624ec28^])
+* *yamllint:* add rule `empty-values` & use new `yaml-files` setting
+(https://github.com/saltstack-formulas/deepsea-formula/commit/9280fc7[9280fc7^])
+* merge travis matrix, add `salt-lint` & `rubocop` to `lint` job
+(https://github.com/saltstack-formulas/deepsea-formula/commit/c12fc90[c12fc90^])
+* use `dist: bionic` & apply `opensuse-leap-15` SCP error workaround
+(https://github.com/saltstack-formulas/deepsea-formula/commit/cf55fbf[cf55fbf^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.2.1...v0.3.0++[0.3.0^] (2019-08-17)
+
+=== Features
+
+* *yamllint:* include for this repo and apply rules throughout
+(https://github.com/saltstack-formulas/deepsea-formula/commit/e9c195f[e9c195f^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.2.0...v0.2.1++[0.2.1^] (2019-07-31)
+
+=== Bug Fixes
+
+* *archlinux:* no python rados package; fix requisite
+(https://github.com/saltstack-formulas/deepsea-formula/commit/2212491[2212491^])
+* *jinja:* json filter & use upstream makefile
+(https://github.com/saltstack-formulas/deepsea-formula/commit/76ce0fc[76ce0fc^])
+
+== link:++https://github.com/saltstack-formulas/deepsea-formula/compare/v0.1.0...v0.2.0++[0.2.0^] (2019-07-08)
+
+=== Bug Fixes
+
+* *deps:* ensure make is installed
+(https://github.com/saltstack-formulas/deepsea-formula/commit/969f2b1[969f2b1^])
+* *deps:* skip python-boto package on Cent/Suse
+(https://github.com/saltstack-formulas/deepsea-formula/commit/06158d3[06158d3^])
+* *example:* fix pillar.example version
+(https://github.com/saltstack-formulas/deepsea-formula/commit/486f07d[486f07d^])
+* *gemfile:* use latest net-ssh gem
+(https://github.com/saltstack-formulas/deepsea-formula/commit/07f4a75[07f4a75^])
+* *jinja:* pass dict as yaml to jinja renderer
+(https://github.com/saltstack-formulas/deepsea-formula/commit/8464691[8464691^])
+* *makefile:* fix makefile cut+paste issue
+(https://github.com/saltstack-formulas/deepsea-formula/commit/2676182[2676182^])
+* *map:* need osfingermap for debian
+(https://github.com/saltstack-formulas/deepsea-formula/commit/c86f76a[c86f76a^])
+* *map:* update os mappings for centos/fedora
+(https://github.com/saltstack-formulas/deepsea-formula/commit/5bd353b[5bd353b^])
+* *packages:* corrected dependency packages & user:group
+(https://github.com/saltstack-formulas/deepsea-formula/commit/20b6c31[20b6c31^])
+* *python:* avoid downgrade to python2
+(https://github.com/saltstack-formulas/deepsea-formula/commit/d3e9f03[d3e9f03^])
+* *redhat:* correct python rados package; update kitchen
+(https://github.com/saltstack-formulas/deepsea-formula/commit/905d85b[905d85b^])
+* *source:* fixes for building from source
+(https://github.com/saltstack-formulas/deepsea-formula/commit/5f7ba72[5f7ba72^])
+* *travis:* use newer image and ruby
+(https://github.com/saltstack-formulas/deepsea-formula/commit/6786612[6786612^])
+
+=== Code Refactoring
+
+* *jinja:* tidyup indention on jinja rendering
+(https://github.com/saltstack-formulas/deepsea-formula/commit/86211e0[86211e0^])
+
+=== Documentation
+
+* *contribs:* update contributing.rst
+(https://github.com/saltstack-formulas/deepsea-formula/commit/d005fb0[d005fb0^])
+* *readme:* add FreeBSD to readme
+(https://github.com/saltstack-formulas/deepsea-formula/commit/96e275a[96e275a^])
+* *readme:* note basic post-formula integration
+(https://github.com/saltstack-formulas/deepsea-formula/commit/b4bb933[b4bb933^])
+
+=== Features
+
+* *integration:* update ceph release-name & packages
+(https://github.com/saltstack-formulas/deepsea-formula/commit/2db3acc[2db3acc^])
+* *template:* migrate to template-formula v3.0.0
+(https://github.com/saltstack-formulas/deepsea-formula/commit/4d9e571[4d9e571^])
+
+=== Tests
+
+* *matrix:* use opensuse15 (no py3 on cent6)
+(https://github.com/saltstack-formulas/deepsea-formula/commit/26b126f[26b126f^])
+* *travis:* trigger new job
+(https://github.com/saltstack-formulas/deepsea-formula/commit/f271ba3[f271ba3^])
+* *travis:* update .travis.yml adding "dist: xenial"
+(https://github.com/saltstack-formulas/deepsea-formula/commit/3035ab7[3035ab7^])
