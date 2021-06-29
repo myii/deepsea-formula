@@ -31,3 +31,11 @@ CentOS-8:
   pkg:
     deps:
       - python36-netaddr
+
+# os: Fedora
+Fedora-34:
+  pkg:
+    deps:
+      - python3-boto
+      - python3-netaddr
+      - tox
